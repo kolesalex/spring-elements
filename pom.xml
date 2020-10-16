@@ -17,6 +17,7 @@
     <modules>
         <module>custom-scope</module>
         <module>deprecated-bean-autoreplacer</module>
+        <module>bpp-sql-autowire</module>
     </modules>
 
     <build>
