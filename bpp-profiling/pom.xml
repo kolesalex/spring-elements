@@ -6,20 +6,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.kolesa.spring.elements</groupId>
-    <artifactId>spring-elements</artifactId>
+    <artifactId>bpp-profiling</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <modules>
-        <module>custom-scope</module>
-        <module>deprecated-bean-autoreplacer</module>
-        <module>bpp-sql-autowire</module>
-        <module>bpp-profiling</module>
-    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
